@@ -99,6 +99,20 @@ pluginTester({
         __dirname,
         './fixtures/double_self_refs_styled_component.js'
       )
+    },
+    {
+      title: 'adds namespace to withConfig styled-component',
+      pluginOptions: {
+        rawCssNamespace: '.specific'
+      },
+      fixture: path.join(__dirname, './fixtures/styled_with_config.js')
+    },
+    {
+      title: 'adds raw namespace to simple styled-component',
+      pluginOptions: {
+        rawCssNamespace: '.specific'
+      },
+      fixture: path.join(__dirname, './fixtures/simple_styled_component.js')
     }
   ]
 });
